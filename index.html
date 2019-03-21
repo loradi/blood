@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login /title>
+	<title>Login V4</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -97,6 +97,22 @@
 			</div>
 		</div>
 	</div>
+
+
+
+	<div id="login_div" class="main-div">
+		<h3>Firebase Web login Example</h3>
+		<input type="email" placeholder="Email..." id="email_field" />
+		<input type="password" placeholder="Password..." id="password_field" />
+	
+		<button onclick="login()">Login to Account</button>
+	  </div>
+	
+	  <div id="user_div" class="loggedin-div">
+		<h3>Welcome User</h3>
+		<p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+		<button onclick="logout()">Logout</button>
+	  </div>
 	
 
 	<div id="dropDownSelect1"></div>
@@ -117,7 +133,6 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
 <!--===============================================================================================-->
 <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 <script>
@@ -134,6 +149,7 @@
 </script>
 <!--===============================================================================================-->
 	<script src="js/app.js"></script>
+
 
 </body>
 </html>
